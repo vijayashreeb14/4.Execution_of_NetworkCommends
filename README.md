@@ -25,8 +25,8 @@ This commands includes
 <BR>
 • Other IP Commands e.g. show ip route etc.
 <BR>
-client:
 ~~~
+client:
 import socket 
 from pythonping import ping 
 s=socket.socket() 
@@ -56,6 +56,7 @@ target = ["www.google.com"]
 result, unans = traceroute(target,maxttl=32) 
 print(result,unans)
 ~~~
+
 ## Output
 client
 
