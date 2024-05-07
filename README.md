@@ -27,6 +27,8 @@ This commands includes
 <BR>
 program:ping command
 client:
+
+
 ~~~
 import socket 
 from pythonping import ping 
@@ -40,8 +42,12 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
         c.send("Not Found".encode()) 
-~~~      
-server:
+~~~
+
+
+server
+
+
 ~~~
 import socket 
 s=socket.socket() 
@@ -51,7 +57,11 @@ while True:
     s.send(ip.encode()) 
     print(s.recv(1024).decode()) 
 ~~~
+
+
 Tracer:
+
+
 ~~~
 from scapy.all import* 
 target = ["www.google.com"] 
