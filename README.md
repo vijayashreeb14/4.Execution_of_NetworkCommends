@@ -40,6 +40,7 @@ while True:
         c.send(str(ping(hostname, verbose=False)).encode()) 
     except KeyError: 
         c.send("Not Found".encode())
+~~~        
 server:
 import socket 
 s=socket.socket() 
@@ -48,6 +49,8 @@ while True:
     ip=input("Enter the website you want to ping ") 
     s.send(ip.encode()) 
     print(s.recv(1024).decode()) 
+~~~
+
 Tracer:
 from scapy.all import* 
 target = ["www.google.com"] 
@@ -60,9 +63,11 @@ Tracer:
 ![Screenshot 2024-05-07 193219](https://github.com/vijayashreeb14/4.Execution_of_NetworkCommends/assets/161238151/e495f43d-bf7f-4d08-8536-179dbb5de9a3)
 
 client:
+
 ![image](https://github.com/vijayashreeb14/4.Execution_of_NetworkCommends/assets/161238151/7952a040-9c65-45a9-94e0-b3a76ef5bf16)
 
 Server:
+
 ![Screenshot 2024-05-07 193343](https://github.com/vijayashreeb14/4.Execution_of_NetworkCommends/assets/161238151/a4b3ff6a-6a9a-44a0-9940-7a2f0e310641)
 
 Result:
